@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://13.233.207.43:3000/api',
+  baseURL: 'https://promoted-pipefish-currently.ngrok-free.app/api',
   headers: {
     'Content-Type': 'application/json',
   },
