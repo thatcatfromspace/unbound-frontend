@@ -12,6 +12,7 @@ api.interceptors.request.use(
     const apiKey = localStorage.getItem('x-api-key');
     if (apiKey) {
       config.headers['x-api-key'] = apiKey;
+      config.headers['ngrok-skip-browser-warning'] = "true";
     }
     return config;
   },
