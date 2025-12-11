@@ -10,7 +10,7 @@ import { useToast } from '@/components/ui/Toast';
 
 export default function Users() {
   const [email, setEmail] = useState('');
-  const [role, setRole] = useState('USER');
+  const [role, setRole] = useState('MEMBER');
   const [credits, setCredits] = useState(100);
   const [createdKey, setCreatedKey] = useState(null);
   
@@ -76,7 +76,7 @@ export default function Users() {
                     value={role}
                     onChange={(e) => setRole(e.target.value)}
                   >
-                    <option value="USER">USER</option>
+                    <option value="MEMBER">MEMBER</option>
                     <option value="ADMIN">ADMIN</option>
                   </select>
                </div>
