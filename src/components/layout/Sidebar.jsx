@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Terminal, Shield, Users, LogOut, FileText } from 'lucide-react';
+import { Terminal, Shield, Users, LogOut, FileText, Inbox } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
@@ -10,9 +10,10 @@ export function Sidebar() {
 
   const navItems = [
     { label: 'TERMINAL', icon: Terminal, href: '/' },
-    { label: 'RULES', icon: Shield, href: '/admin/rules' }, // admin only usually
-    { label: 'USERS', icon: Users, href: '/admin/users' }, // admin only usually
-    { label: 'LOGS', icon: FileText, href: '/admin/logs' }, // admin only usually
+    { label: 'APPROVALS', icon: Inbox, href: '/admin/approvals' },
+    { label: 'RULES', icon: Shield, href: '/admin/rules' }, 
+    { label: 'USERS', icon: Users, href: '/admin/users' }, 
+    { label: 'LOGS', icon: FileText, href: '/admin/logs' }, 
   ];
 
   return (

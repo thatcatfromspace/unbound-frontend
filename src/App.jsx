@@ -4,6 +4,7 @@ import Terminal from './pages/Terminal';
 import Rules from './pages/admin/Rules';
 import Users from './pages/admin/Users';
 import Logs from './pages/admin/Logs';
+import Approvals from './pages/admin/Approvals';
 import { DashboardLayout } from './components/layout/DashboardLayout';
 import { ProtectedRoute } from './components/ProtectedRoute';
 
@@ -15,6 +16,7 @@ function App() {
         
         <Route element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
           <Route path="/" element={<Terminal />} />
+          <Route path="/admin/approvals" element={<Approvals />} />
           <Route path="/admin/rules" element={<Rules />} />
           <Route path="/admin/users" element={<Users />} />
           <Route path="/admin/logs" element={<Logs />} />

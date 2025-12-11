@@ -66,10 +66,6 @@ export default function Login() {
             </Button>
           </form>
         </div>
-
-        <div className="text-center text-xs text-muted-foreground font-mono opacity-50">
-          SECURE_CONNECTION_ESTABLISHED_V2.0
-        </div>
       </div>
     </div>
   );

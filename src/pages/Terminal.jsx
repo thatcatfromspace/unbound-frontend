@@ -109,6 +109,10 @@ export default function Terminal() {
                      <span className="text-destructive flex items-center gap-2">
                         <ShieldAlert className="h-3 w-3" /> BLOCKED BY RULE ENGINE
                      </span>
+                   ) : entry.status === 'PENDING' ? (
+                     <span className="text-yellow-500 flex items-center gap-2 animate-pulse">
+                        <ShieldAlert className="h-3 w-3" /> REQUEST SUBMITTED - PENDING APPROVAL
+                     </span>
                    ) : (
                      <pre className={`whitespace-pre-wrap ${entry.success ? 'text-green-400' : 'text-red-400'}`}>
                         {entry.output || (entry.success ? "Command executed successfully (No Output)" : "Unknown Error")}
